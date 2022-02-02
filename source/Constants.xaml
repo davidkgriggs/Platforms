@@ -1,0 +1,469 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    mc:Ignorable="d">
+
+    <sys:Boolean x:Key="UseAbsoluteExtraMetadataPath">false</sys:Boolean>
+    <sys:String x:Key="ExtraMetadataPath">..\..\..\..</sys:String>
+    <!--sys:String x:Key="ExtraMetadataPath">C:\Users\david\AppData\Roaming\Playnite</sys:String-->
+	<sys:String x:Key="DKGThemeModifierPath">.</sys:String>
+	<!--sys:String x:Key="DKGThemeModifierPath">C:\Users\david\AppData\Roaming\Playnite\DKGThemeModifier</sys:String-->
+	<sys:String x:Key="DKGThemeModifierAutoDownloadMedia">.</sys:String>
+
+    <!--Filter Descriptions-->
+    <!--DESC_Games--><sys:String x:Key="Description_Games">A personal computer game, also known as a PC game or computer game, is a type of video game played on a personal computer (PC) rather than a video game console or arcade machine. Its defining characteristics include: more diverse and user-determined gaming hardware and software; and generally greater capacity in input, processing, video and audio output. The uncoordinated nature of the PC game market, and now its lack of physical media, make precisely assessing its size difficult. In 2018, the global PC games market was valued at about $27.7 billion.</sys:String><!--DESC_Games-->
+    <!--DESC_Media--><sys:String x:Key="Description_Media">Digital media means any communication media that operate with the use of any of various encoded machine-readable data formats. Digital media can be created, viewed, distributed, modified, listened to, and preserved on a digital electronics device. Digital can be defined as any data represented by a series of digits, while media refers to methods of broadcasting or communicating these information.</sys:String><!--DESC_Media-->
+    
+	<!--DESC_Amazon--><sys:String x:Key="Description_AmazonGames">Amazon Games (formerly Amazon Game Studios) is an American video game company and division of the online retailing company Amazon that primarily focuses on publishing video games developed within the company's development divisions.</sys:String><!--DESC_Amazon-->
+	<!--DESC_Battle--><sys:String x:Key="Description_Battle">Battle.net is an Internet-based online game, social networking service, digital distribution, and digital rights management platform developed by Blizzard Entertainment. The service was launched on December 31, 1996, followed a few days later with the release of Blizzard's action-role-playing video game Diablo on January 3, 1997. Battle.net was officially renamed to "Blizzard Battle.net" in August 2017.</sys:String><!--DESC_Battle-->
+	<!--DESC_Bethesda--><sys:String x:Key="Description_Bethesda">Bethesda Softworks LLC is an American video game publisher based in Rockville, Maryland. The company was founded by Christopher Weaver in 1986 as a division of Media Technology Limited, and in 1999 became a subsidiary of ZeniMax Media. In its first fifteen years, it was a video game developer and self-published its titles.</sys:String><!--DESC_Bethesda-->
+	<!--DESC_Epic--><sys:String x:Key="Description_Epic">Epic Games, Inc. is an American video game and software developer and publisher based in Cary, North Carolina. The company was founded by Tim Sweeney as Potomac Computer Systems in 1991, originally located in his parents' house in Potomac, Maryland. Following his first commercial video game release, ZZT (1991), the company became Epic MegaGames, Inc. in early 1992 and brought on Mark Rein, who is the company's vice president to date. Moving their headquarters to Cary in 1999, the studio's name was simplified to Epic Games.</sys:String><!--DESC_Epic-->
+	<!--DESC_Fanatical--><sys:String x:Key="Description_Fanatical">Fanatical (formerly Bundle Stars) is a United Kingdom-based online video game retailer. It has sold more than 80 million officially authorised game keys to over two million customers globally. Fanatical has a catalogue of over 8,000 games from more than 1,000 game publishers and developers. These include direct partnerships with Bethesda Softworks, SEGA, THQ Nordic, Deep Silver, Kalypso Media and Codemasters as well as smaller independent developers.</sys:String><!--DESC_Fanatical-->
+	<!--DESC_GOG--><sys:String x:Key="Description_GOG">GOG.com (formerly Good Old Games) is a digital distribution platform for video games and films. It is operated by GOG sp. z o.o., a wholly owned subsidiary of CD Projekt based in Warsaw, Poland. GOG.com delivers DRM-free video games through its digital platform for Microsoft Windows, macOS and Linux.</sys:String><!--DESC_GOG-->
+	<!--DESC_Humble--><sys:String x:Key="Description_Humble">Humble Bundle, Inc. is a digital storefront for video games, which grew out of its original offering of Humble Bundles, collections of games sold at a price determined by the purchaser and with a portion of the price going towards charity and the rest split between the game developers. Humble Bundle continues to offer these limited-time bundles, but have expanded to include a greater and more persistent storefront.</sys:String><!--DESC_Humble-->
+	<!--DESC_itch--><sys:String x:Key="Description_itch">Itch.io (stylized as itch.io) is a website for users to host, sell and download indie games. Released in March 2013 by Leaf Corcoran, the service hosts over 400,000 games and items as of August 2021.Itch.io (stylized as itch.io) is a website for users to host, sell and download indie games. Released in March 2013 by Leaf Corcoran, the service hosts over 400,000 games and items as of August 2021.</sys:String><!--DESC_itch-->
+	<!--DESC_Origin--><sys:String x:Key="Description_Origin">Origin is a digital distribution platform developed by Electronic Arts for purchasing and playing video games. The platform's software client is available for personal computer and mobile platforms. Origin contains social features such as profile management, networking with friends with chat and direct game joining along with an in-game overlay, streaming via Twitch and sharing of game library and community integration with networking sites like Facebook, Xbox Live, PlayStation Network, and Nintendo Network.</sys:String><!--DESC_Origin-->
+	<!--DESC_Rockstar--><sys:String x:Key="Description_Rockstar">Rockstar Games, Inc. is an American video game publisher based in New York City. The company was established in December 1998 as a subsidiary of Take-Two Interactive, using the assets Take-Two had previously acquired from BMG Interactive. Founding members of the company were Sam and Dan Houser, Terry Donovan and Jamie King, who worked for Take-Two at the time, and of which the Houser brothers were previously executives at BMG Interactive. Sam Houser heads the studio as president.</sys:String><!--DESC_Rockstar-->
+	<!--DESC_Steam--><sys:String x:Key="Description_Steam">Steam is a video game digital distribution service by Valve. It was launched as a standalone software client in September 2003 as a way for Valve to provide automatic updates for their games, and expanded to include games from third-party publishers. Steam has also expanded into an online web-based and mobile digital storefront. Steam offers digital rights management (DRM), server hosting, video streaming, and social networking services. It also provides the user with installation and automatic updating of games, and community features such as friends lists and groups, cloud storage, and in-game voice and chat functionality.</sys:String><!--DESC_Steam-->
+	<!--DESC_Ubisoft--><sys:String x:Key="Description_Ubisoft">Ubisoft Connect (formerly Uplay) is a digital distribution, digital rights management, multiplayer and communications service developed by Ubisoft to provide an experience similar to the achievements/trophies offered by various other game companies. The service is provided across various platforms. Ubisoft Connect is used exclusively by first-party Ubisoft games, and although some third-party ones are sold through the Ubisoft store, they do not use the Ubisoft Connect platform.</sys:String><!--DESC_Ubisoft-->
+	<!--DESC_XboxGames--><sys:String x:Key="Description_XboxGames">The Xbox app is an app for Windows 8, Windows 10, Windows 11, Android, and iOS. It acts as a companion app for Xbox video game consoles, providing access to Xbox Live community features, remote control, as well as second screen functionality (formerly branded as SmartGlass) with selected games, applications, and content.</sys:String><!--DESC_XboxGames-->
+	<!--DESC_xCloud--><sys:String x:Key="Description_xCloud">Xbox Cloud Gaming (formerly known as Project xCloud and colloquially referred to as xCloud) is Microsoft's Xbox cloud gaming service.[5] Initially released in beta testing in November 2019, the service later launched for subscribers of Xbox Game Pass Ultimate on September 15, 2020. Xbox Game Pass cloud gaming is provided to subscribers of Ultimate at no additional cost.</sys:String><!--DESC_xCloud-->
+	
+    <!--DESC_NES--><sys:String x:Key="Description_NES">The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. It was first released as the Family Computer (FC), commonly known as the Famicom, in 1983 in Japan. The NES, a redesigned version, made its debut in American test markets in October 1985, before becoming widely available in the rest of North America and other countries.</sys:String><!--DESC_NES-->
+    <!--DESC_SEGAGenesis--><sys:String x:Key="Description_SEGAGenesis">The Sega Genesis, known as the Mega Drive outside North America, is a 16-bit fourth-generation home video game console developed and sold by Sega. The Genesis was Sega's third console and the successor to the Master System. Sega released it in 1988 in Japan as the Mega Drive, and in 1989 in North America as the Genesis. In 1990, it was distributed as the Mega Drive by Virgin Mastertronic in Europe, Ozisoft in Australasia, and Tec Toy in Brazil.</sys:String><!--DESC_SEGAGenesis-->
+    <!--DESC_GameBoy--><sys:String x:Key="Description_GameBoy">The Game Boy is an 8-bit handheld game console developed and manufactured by Nintendo. The first handheld in the Game Boy family, it was first released in Japan on April 21, 1989. The console was released in North America later the same year, then in Europe in late 1990.</sys:String><!--DESC_GameBoy-->
+    <!--DESC_SNES--><sys:String x:Key="Description_SNES">The Super Nintendo Entertainment System (SNES), commonly shortened to Super NES or Super Nintendo, is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea, 1991 in North America, 1992 in Europe and Oceania, and 1993 in South America. In Japan, the system is called the Super Famicom (SFC). In South Korea, it is known as the Super Comboy and was distributed by Hyundai Electronics.</sys:String><!--DESC_SNES-->
+    <!--DESC_SEGASaturn--><sys:String x:Key="Description_SEGASaturn">The Sega Saturn is a home video game console developed by Sega and released on November 22, 1994, in Japan, May 11, 1995, in North America, and July 8, 1995, in Europe. Part of the fifth generation of video game consoles, it was the successor to the successful Sega Genesis. The Saturn has a dual-CPU architecture and eight processors. Its games are in CD-ROM format, and its game library contains several ports of arcade games as well as original games.</sys:String><!--DESC_SEGASaturn-->
+    <!--DESC_PS1--><sys:String x:Key="Description_PS1">The PlayStation (abbreviated as PS, commonly known as the PS1 or its codename PSX) is a home video game console developed and marketed by Sony Computer Entertainment. It was first released on 3 December 1994 in Japan, 9 September 1995 in North America, 29 September 1995 in Europe, and 15 November 1995 in Australia, and was the first of the PlayStation line of video game consoles. As a fifth-generation console, the PlayStation primarily competed with the Nintendo 64 and the Sega Saturn.</sys:String><!--DESC_PS1-->
+    <!--DESC_N64--><sys:String x:Key="Description_N64">The Nintendo 64 (abbreviated as N64, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. The console is the successor to the Super Nintendo Entertainment System. It was first released on June 23, 1996 in Japan, on September 29, 1996 in North America, and March 1, 1997 in Europe and Australia. It was the last major home console to use cartridges as its primary storage format until the Nintendo Switch in 2017. As a fifth generation console, it competed primarily with the Sony PlayStation and the Sega Saturn.</sys:String><!--DESC_N64-->
+    <!--DESC_GameBoyColour--><sys:String x:Key="Description_GameBoyColour">The Game Boy Color (commonly abbreviated as GBC) is a handheld game console, manufactured by Nintendo, which was released in Japan on October 21, 1998 and to international markets that November. It is the successor to the Game Boy and is part of the Game Boy family. The GBC features a color screen rather than monochrome, but it is not backlit.</sys:String><!--DESC_GameBoyColour-->
+    <!--DESC_SEGADreamcast--><sys:String x:Key="Description_SEGADreamcast">The Dreamcast is a home video game console released by Sega on November 27, 1998 in Japan, September 9, 1999 in North America, and October 14, 1999 in Europe. It was the first in the sixth generation of video game consoles, preceding Sony's PlayStation 2, Nintendo's GameCube, and Microsoft's Xbox. The Dreamcast was Sega's final home console, marking the end of the company's eighteen years in the console market.</sys:String><!--DESC_SEGADreamcast-->
+    <!--DESC_PS2--><sys:String x:Key="Description_PS2">The PlayStation 2 (abbreviated as PS2) is a home video game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on 4 March 2000, in North America on 26 October 2000, in Europe on 24 November 2000, and in Australia on 30 November 2000. It is the successor to the original PlayStation, as well as the second instalment in the PlayStation brand of consoles. As a sixth-generation console, it competed with Sega's Dreamcast, Nintendo's GameCube, and Microsoft's Xbox.</sys:String><!--DESC_PS2-->
+    <!--DESC_GameCube--><sys:String x:Key="Description_GameCube">The Nintendo GameCube is a home video game console released by Nintendo in Japan on September 14, 2001, in North America on November 18, 2001, and in PAL territories in 2002. The GameCube was Nintendo's entry in the sixth generation of video game consoles and is the successor to the Nintendo 64. The GameCube competed with Sony's PlayStation 2 and Microsoft's original Xbox.</sys:String><!--DESC_GameCube-->
+    <!--DESC_GameBoyAdvance--><sys:String x:Key="Description_GameBoyAdvance">The Game Boy Advance (GBA) is a 32-bit handheld game console developed, manufactured and marketed by Nintendo as the successor to the Game Boy Color. It was released in Japan on March 21, 2001, in North America on June 11, 2001, in the PAL region on June 22, 2001, and in mainland China as iQue Game Boy Advance on June 8, 2004. The GBA is part of the sixth generation of video game consoles.</sys:String><!--DESC_GameBoyAdvance-->
+    <!--DESC_Xbox--><sys:String x:Key="Description_Xbox">The Xbox is a home video game console and the first installment in the Xbox series of video game consoles manufactured by Microsoft. It was released as Microsoft's first foray into the gaming console market on November 15, 2001, in North America, followed by Australia, Europe and Japan in 2002. It is classified as a sixth-generation console, competing with Sony's PlayStation 2 and Nintendo's GameCube. It was also the first major console produced by an American company since the release of the Atari Jaguar in 1993.</sys:String><!--DESC_Xbox-->
+    <!--DESC_NDS--><sys:String x:Key="Description_NDS">The Nintendo DS is a handheld game console produced by Nintendo, released globally across 2004 and 2005. The DS, an initialism for "Developers' System" or "Dual Screen",[5] introduced distinctive new features to handheld games: two LCD screens working in tandem (the bottom one being a touchscreen), a built-in microphone and support for wireless connectivity.[6] Both screens are encompassed within a clamshell design similar to the Game Boy Advance SP. </sys:String><!--DESC_NDS-->
+    <!--DESC_PSP--><sys:String x:Key="Description_PSP">The PlayStation Portable (PSP) is a handheld game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on December 12, 2004, in North America on March 24, 2005, and in PAL regions on September 1, 2005, and is the first handheld installment in the PlayStation line of consoles. As a seventh generation console it competed with the Nintendo DS.</sys:String><!--DESC_PSP-->
+    <!--DESC_Xbox360--><sys:String x:Key="Description_Xbox360">The Xbox 360 is a home video game console developed by Microsoft. As the successor to the original Xbox, it is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles.</sys:String><!--DESC_Xbox360-->
+    <!--DESC_PS3--><sys:String x:Key="Description_PS3">The PlayStation 3 (PS3) is a home video game console developed by Sony Computer Entertainment. It is the successor to PlayStation 2, and is part of the PlayStation brand of consoles. It was first released on November 11, 2006, in Japan, November 17, 2006, in North America, and March 23, 2007, in Europe and Australia. The PlayStation 3 competed primarily against Microsoft's Xbox 360 and Nintendo's Wii as part of the seventh generation of video game consoles.</sys:String><!--DESC_PS3-->
+    <!--DESC_Wii--><sys:String x:Key="Description_Wii">The Wii is a home video game console developed and marketed by Nintendo. It was first released on November 19, 2006, in North America and in December 2006 for most other regions of the world. It is Nintendo's fifth major home game console, following the GameCube and is a seventh generation home console alongside Microsoft's Xbox 360 and Sony's PlayStation 3.</sys:String><!--DESC_Wii-->
+    <!--DESC_N3DS--><sys:String x:Key="Description_N3DS">The Nintendo 3DS is a handheld game console produced by Nintendo. It was announced in March 2010 and unveiled at E3 2010 as the successor to the Nintendo DS. The system features backward compatibility with older Nintendo DS video games. As an eighth-generation console, its primary competitor was Sony's PlayStation Vita.</sys:String><!--DESC_N3DS-->
+    <!--DESC_WiiU--><sys:String x:Key="Description_WiiU">The Wii U is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft's Xbox One and Sony's PlayStation 4. The Wii U is the first Nintendo console to support HD graphics. The system's primary controller is the Wii U GamePad, which features an embedded touchscreen, directional buttons, analog sticks, and action buttons. The screen can be used either as a supplement to the main display or in supported games to play the game directly on the GamePad.</sys:String><!--DESC_WiiU-->
+    <!--DESC_PS4--><sys:String x:Key="Description_PS4">The PlayStation 4 (PS4) is a home video game console developed by Sony Computer Entertainment. Announced as the successor to the PlayStation 3 in February 2013, it was launched on November 15, 2013, in North America, November 29, 2013 in Europe, South America and Australia, and on February 22, 2014 in Japan. A console of the eighth generation, it competes with Microsoft's Xbox One, Nintendo's Wii U and Switch.</sys:String><!--DESC_PS4-->
+    <!--DESC_XboxOne--><sys:String x:Key="Description_XboxOne">The Xbox One is a line of home video game consoles developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third base console in the Xbox series of video game consoles. It was first released in North America, parts of Europe, Australia, and South America in November 2013 and in Japan, China, and other European countries in September 2014. It is the first Xbox game console to be released in China, specifically in the Shanghai Free-Trade Zone. Microsoft marketed the device as an "all-in-one entertainment system", hence the name "Xbox One". An eighth-generation console, it mainly competed against Sony's PlayStation 4 and Nintendo's Wii U and later the Switch.</sys:String><!--DESC_XboxOne-->
+    <!--DESC_NintendoSwtich--><sys:String x:Key="Description_NintendoSwtich">The Nintendo Switch is a video game console developed by Nintendo and released worldwide in most regions on March 3, 2017. The console itself is a tablet that can either be docked for use as a home console or used as a portable device, making it a hybrid console. Its wireless Joy-Con controllers, with standard buttons and directional analog sticks for user input, motion sensing, and tactile feedback, can attach to both sides of the console to support handheld-style play.</sys:String><!--DESC_NintendoSwtich-->
+    <!--DESC_PS5--><sys:String x:Key="Description_PS5">The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, the PS5 was released on November 12, 2020, in Australia, Japan, New Zealand, Singapore, North America, and South Korea, with worldwide release following a week later. The PS5 is part of the ninth generation of video game consoles, along with Microsoft's Xbox Series X and Series S consoles, which were released in the same month.</sys:String><!--DESC_PS5-->
+
+
+    <!--Intro-->
+    <sys:Boolean x:Key="Intro">false</sys:Boolean>
+
+    <!--IntroTimespan-->
+    <!--IL--><sys:TimeSpan x:Key="IntroTimespan">0:0:03</sys:TimeSpan><!--IL-->
+
+    <!--IntroVideo-->
+    <sys:Boolean x:Key="IntroVideo">false</sys:Boolean>
+
+    <!--IntroVideoVolume-->
+    <!--IVV--><sys:Double x:Key="IntroVideoVolume">0</sys:Double><!--IVV-->
+
+    <!--Banners-->
+    <sys:Boolean x:Key="Banners">false</sys:Boolean>
+
+    <!--RoundedCorners-->
+    <sys:Boolean x:Key="RoundedCorners">false</sys:Boolean>
+
+    <!--VideoCovers-->
+    <sys:Boolean x:Key="VideoCovers">true</sys:Boolean>
+
+    <!--VideoBackgrounds-->
+    <sys:Boolean x:Key="VideoBackgrounds">false</sys:Boolean>
+
+    <!--Trailers-->
+    <sys:Boolean x:Key="Trailers">true</sys:Boolean>
+
+    <!--SideBar-->
+    <sys:Boolean x:Key="SideBar">true</sys:Boolean>
+
+    <!--DFS--><sys:Double x:Key="DescriptionFont">18</sys:Double><!--DFS-->
+
+    <!--MainScreenLogo-->
+    <sys:Boolean x:Key="MainScreenLogo">true</sys:Boolean>
+
+    <!--DescriptionOnOff-->
+    <sys:Boolean x:Key="DescriptionOnOff">true</sys:Boolean>
+
+    <sys:Boolean x:Key="DropShadows">false</sys:Boolean>
+
+    <!--LGH--><sys:Double x:Key="ListGamesHeight">600</sys:Double><!--LGH-->
+
+    <sys:Boolean x:Key="PlatformImageBackgrounds">false</sys:Boolean>
+
+    <!--FPW--><sys:Double x:Key="FilterWidth">1920</sys:Double><!--FPW-->
+
+    <Color x:Key="BlackColor">#FF000000</Color>
+    <Color x:Key="WhiteColor">#FFFFFFFF</Color>
+    <Color x:Key="GlyphColor">#00887F</Color>
+    <Color x:Key="GlyphLightColor">#00BAAF</Color>
+    <Color x:Key="SelectionLightColor">#FF8D919D</Color>
+    <Color x:Key="OverlayColor">#BB000000</Color>
+    <Color x:Key="UIColour">#00BAAF</Color>
+
+    <Color x:Key="ControlBackgroundColor">#303030</Color>
+    <Color x:Key="ControlBackgroundColorDark">#202020</Color>
+    <Color x:Key="ControlButton">#404040</Color>
+
+    <!--MBC--><Color x:Key="MainBackgroundColor">#202020</Color><!--MBC-->
+
+    <Color x:Key="TextColor">#FFEBEBEB</Color>
+    <Color x:Key="TextColorDark">#FF757575</Color>
+
+    <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
+    <SolidColorBrush x:Key="TextBrushDark" Color="{DynamicResource TextColorDark}" />
+    <SolidColorBrush x:Key="GlyphBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="GlyphLightBrush" Color="{DynamicResource GlyphLightColor}" />
+    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource ControlBackgroundColor}" />
+    <SolidColorBrush x:Key="ControlBackgroundDarkBrush" Color="{DynamicResource ControlBackgroundColorDark}" />
+    <SolidColorBrush x:Key="MainBackgroundColorBrush" Color="{DynamicResource MainBackgroundColor}" />
+    <SolidColorBrush x:Key="ControlButtonBrush" Color="{DynamicResource ControlButton}" />
+    <SolidColorBrush x:Key="SelectionLightBrush" Color="{DynamicResource SelectionLightColor}" />
+    <SolidColorBrush x:Key="OverlayBrush" Color="{DynamicResource OverlayColor}" />
+    <SolidColorBrush x:Key="CheckBoxCheckMarkBkBrush" Color="{DynamicResource ControlBackgroundColorDark}" />
+    <!--UIB--><SolidColorBrush x:Key="UIBrush" Color="{DynamicResource UIColour}" /><!--UIB-->
+
+    <sys:Double x:Key="FontSizeSmall">20</sys:Double>
+    <sys:Double x:Key="FontSize">22</sys:Double>
+
+    <sys:Double x:Key="FilterPanelWidth">300</sys:Double>
+
+    <Style x:Key="TextBlockBaseStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect BlurRadius="5" />
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--LinearGradientBrush x:Key="MainBackgourndBrush" StartPoint="0,0" EndPoint="1,1" >
+        <GradientStop Color="#586266" Offset="0"/>
+        <GradientStop Color="#7f878c" Offset="1.0"/>
+    </LinearGradientBrush-->
+
+    <RadialGradientBrush x:Key="MainBackgourndBrush"
+          GradientOrigin="0.5,0.5" 
+          Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+        <RadialGradientBrush.GradientStops>
+            <GradientStop Color="#586266" Offset="0" />
+            <GradientStop Color="#7f878c" Offset="1" />
+        </RadialGradientBrush.GradientStops>
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="TopBarBackgroundBrush" StartPoint="-0.5,0.5" EndPoint="1,0.5" >
+        <GradientStop Color="Transparent" Offset="0"/>
+        <GradientStop Color="Transparent" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BottomBarBackgroundBrush" StartPoint="-0.5,0.5" EndPoint="1.5,1" >
+        <GradientStop Color="Transparent" Offset="0"/>
+        <GradientStop Color="Transparent" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="OverlayMenuBackgroundBrush" StartPoint="0,0" EndPoint="1,1" >
+        <GradientStop Color="#202020" Offset="0"/>
+        <GradientStop Color="#606060" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="SelectionBrush" StartPoint="0.5,-0.5" EndPoint="1,1.5" >
+        <GradientStop Color="{DynamicResource UIColour}" Offset="0"/>
+        <GradientStop Color="{DynamicResource UIColour}" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <!--LinearGradientBrush x:Key="SelectionBrush2" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#00BAAF" Offset="0"/>
+        <GradientStop Color="#4F70AE" Offset="1"/>
+    </LinearGradientBrush-->
+
+    <RadialGradientBrush x:Key="SelectionBrush2" RadiusX="0.75" RadiusY="0.75">
+        <GradientStop Color="#00BAAF" Offset="0.75"/>
+        <GradientStop Color="#00BAAF" Offset="1"/>
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="GameDetailsBackgroundBrush">
+        <GradientStop Color="#66000000" Offset="0.0"/>
+        <GradientStop Color="#CC303030" Offset="1"/>
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="OverlayDynamicBackground" >
+        <GradientStop Color="#33000000" Offset="0"/>
+        <GradientStop Color="#89000000" Offset="1"/>
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="OverlayTitle" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#00000000" Offset="0.35"/>
+        <GradientStop Color="#BF000000" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="GameDetailsGreyOverlay" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#00000000" Offset="0"/>
+        <GradientStop Color="#202020" Offset="0.2"/>
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="MainBackgroundOverlay" GradientOrigin="0.9,0.3" Center="0.5,0.5"
+                        RadiusX="0.6" RadiusY="0.6">
+        <RadialGradientBrush.GradientStops>
+            <GradientStop Color="#1d000000" Offset="0"/>
+            <GradientStop Color="#1d000000" Offset="0.1"/>
+            <GradientStop Color="#99000000" Offset="1"/>
+        </RadialGradientBrush.GradientStops>
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="OverlayFilterPresets" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#80000000" Offset="0.2"/>
+        <GradientStop Color="#00000000" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="MainColourOverlay" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#00000000" Offset="0.4"/>
+        <GradientStop Color="#80FFFFFF" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="WarningBrush" Color="#ff6b6b" />
+
+    
+    
+    <!--CornerRadiusLarge-->
+    <Style x:Key="CornerRadiusLarge" TargetType="Border">
+        <!--CR--><Setter Property="CornerRadius" Value="15"/><!--CR-->
+    </Style>
+    <!--CornerRadiusSmall-->
+    <Style x:Key="CornerRadiusSmall" TargetType="Border">
+        <Setter Property="CornerRadius" Value="3"/>
+    </Style>
+
+    <!--DscriptionOnOff-->
+    <Style x:Key="DscriptionOnOffStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--VideoCovers-->
+    <Style x:Key="VideoCover" TargetType="Grid">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--VideoBackgrounds-->
+    <Style x:Key="VideoBackground" TargetType="Grid">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=PART_ListGameItems, Path=IsKeyboardFocusWithin}" Value="True">
+                <DataTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="0:0:0" Duration="0:0:0.5"/>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" BeginTime="0:0:11.5" Duration="0:0:0.5"/>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="0" BeginTime="0:0:12" Duration="0:0:6"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.EnterActions>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--Trailers-->
+    <Style x:Key="TrailersStyle" TargetType="StackPanel">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--SideBarTransparent-->
+    <Style x:Key="SideBarTransparentStyle" TargetType="Border">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--SideBar-->
+    <Style x:Key="SideBarStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="Width" Value="350"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=SideBarViewButton, Path=IsChecked}" Value="False">
+                <DataTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-410,0,0,0" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.EnterActions>
+                <DataTrigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-410,0,0,0" To="0,0,0,0" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.ExitActions>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=SideBarViewButton, Path=IsChecked}" Value="True">
+                <DataTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-410,0,0,0" To="0,0,0,0" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.EnterActions>
+                <DataTrigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.2"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-410,0,0,0" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.ExitActions>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--Bottom Text-->
+    <Style x:Key="BottomText" TargetType="Grid">
+        <Setter Property="Control.Margin" Value="0,0,0,0"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=PART_ListGameItems, Path=Height}" Value="860">
+                <Setter Property="ItemsControl.Margin" Value="0,100,0,0"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--Right Info-->
+    <Style x:Key="RightInfo" TargetType="StackPanel">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--MainScreenTitleStyle-->
+    <Style x:Key="MainScreenTitleStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=LogoImage, Path=ActualHeight}" Value="0">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--MainScreenTitleStyle-->
+    <Style x:Key="MainScreenTitleStyle1" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=LogoImage1, Path=ActualHeight}" Value="0">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--MainScreenLogoStyle-->
+    <Style x:Key="MainScreenLogoStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--GameDetailsTitle-->
+    <Style x:Key="GameDetailsTitleStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="false">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--GameDetailsIconStyle-->
+    <Style x:Key="GameDetailsIconStyle" TargetType="Grid">
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="true">
+                <Setter Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--ColourModifier-->
+    <Style x:Key="ColourModifier" TargetType="Grid">
+        <Setter Property="Visibility" Value="Visible"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Opacity" Value="0.75"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="#00000000">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!--Label Changes-->
+    <!--Progress Label-->
+    <Style x:Key="ProgressLabel" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <!--PL--><Setter Property="Text" Value="{DynamicResource LOCSuccessStoryProgress}" /><!--PL-->
+    </Style>
+
+    <!--Earned Label-->
+    <Style x:Key="EarnedLabel" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <!--EL--><Setter Property="Text" Value="{DynamicResource LOCSuccessStoryEarned}" /><!--EL-->
+    </Style>
+</ResourceDictionary>

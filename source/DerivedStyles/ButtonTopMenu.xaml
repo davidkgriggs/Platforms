@@ -1,0 +1,201 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="ButtonTopMenu" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="{TemplateBinding Background}"
+                            x:Name="MainBorder" Opacity="0.4" CornerRadius="40">
+                            <Border.Effect>
+                                <BlurEffect Radius="60"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtra" BorderThickness="4" CornerRadius="40" Margin="-4">
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtraBlur" BorderThickness="4" CornerRadius="40" Margin="-4">
+                            <Border.Effect>
+                                <BlurEffect Radius="10"/>
+                            </Border.Effect>
+                        </Border>
+                        <ContentPresenter />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ButtonNotifications" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock Text="&#xeea3;" FontFamily="{StaticResource FontIcoFont}"
+                                                       HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"
+                                                       Foreground="White" FontSize="30" />
+                        <TextBlock Text="&#x25CF;" Foreground="{DynamicResource GlyphBrush}"
+                                                       HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                                                       FontSize="24" Margin="0,0,5,0" />
+
+                        <Border Background="{TemplateBinding Background}"
+                            x:Name="MainBorder" Opacity="0.4" CornerRadius="40">
+                            <Border.Effect>
+                                <BlurEffect Radius="60"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtra" BorderThickness="4" CornerRadius="40" Margin="-4">
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtraBlur" BorderThickness="4" CornerRadius="40" Margin="-4">
+                            <Border.Effect>
+                                <BlurEffect Radius="10"/>
+                            </Border.Effect>
+                        </Border>
+                        <ContentPresenter />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Api Notifications.Count}" Value="0">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=ChangeViewButton, Path=IsChecked}" Value="True"/>
+                                <Condition Binding="{Binding ElementName=PART_ListGameItems, Path=SelectedIndex}" Value="0"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Focusable" Value="True"/>
+                        </MultiDataTrigger>
+
+                        <DataTrigger Binding="{Binding ElementName=ChangeViewButton, Path=IsChecked}" Value="False">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ElemFilters, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ElemFiltersAdditional, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ContentFilterItems, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ButtonProgramUpdate" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <TextBlock Text="&#xef08;" FontFamily="{StaticResource FontIcoFont}"                                                   
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2"
+                                                   Foreground="{DynamicResource GlyphLightBrush}" FontSize="30" />
+
+                        <Border Background="{TemplateBinding Background}"
+                            x:Name="MainBorder" Opacity="0.4" CornerRadius="40">
+                            <Border.Effect>
+                                <BlurEffect Radius="60"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtra" BorderThickness="4" CornerRadius="40" Margin="-4">
+                        </Border>
+                        <Border BorderBrush="Transparent"
+                            x:Name="MainBorderExtraBlur" BorderThickness="4" CornerRadius="40" Margin="-4">
+                            <Border.Effect>
+                                <BlurEffect Radius="10"/>
+                            </Border.Effect>
+                        </Border>
+                        <ContentPresenter />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Api Notifications.Count}" Value="0">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource UIBrush}" TargetName="MainBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtra" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource UIBrush}" TargetName="MainBorderExtraBlur" />
+                        </Trigger>
+
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=ChangeViewButton, Path=IsChecked}" Value="True"/>
+                                <Condition Binding="{Binding ElementName=PART_ListGameItems, Path=SelectedIndex}" Value="0"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Focusable" Value="True"/>
+                        </MultiDataTrigger>
+
+                        <DataTrigger Binding="{Binding ElementName=ChangeViewButton, Path=IsChecked}" Value="False">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ElemFilters, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ElemFiltersAdditional, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=PART_ContentFilterItems, Path=Visibility}" Value="Visible">
+                            <Setter Property="Focusable" Value="True"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

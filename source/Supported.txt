@@ -1,0 +1,81 @@
+PC Platforms:
+Amazon Games
+Battle.net
+Bethesda
+Epic
+Fanatical
+GOG
+Humble
+itch.io
+Origin
+Rockstar Games
+Steam
+Ubisoft Connect
+Xbox Games
+xCloud
+Xbox Cloud Gaming
+
+Consoles:
+Third Generation:
+Nintendo Entertainment System
+NES
+
+Fourth Generation:
+SEGA Genesis
+SEGA Mega Drive
+Nintendo Game Boy
+Game Boy
+Super Nintendo Entertainment System
+SNES
+
+Fifth Generation:
+SEGA Saturn
+Sony Playstation
+PS1
+Nintendo 64
+N64
+Nintendo Game Boy Color
+Game Boy Color
+GBC
+
+Sixth Generation:
+SEGA Dreamcast
+Playstation 2
+PS2
+Nintendo GameCube
+GameCube
+Nintendo Game Boy Advance
+Game Boy Advance
+GBA
+Xbox
+Nintendo DS
+NDS
+Playstation Portable
+PSP
+
+Seventh Generation:
+Xbox 360
+Playstation 3
+PS3
+Nintendo Wii
+Wii
+Nintendo 3DS
+N3DS
+
+Eighth Generation:
+Nintendo Wii U
+Wii U
+Playstation 4
+PS4
+Xbox One
+Nintendo Switch
+Switch
+Playstation 5
+PS5
+Xbox Series
+
+Other:
+PC
+PC (Windows)
+Games
+Media
