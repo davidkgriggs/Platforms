@@ -13,6 +13,12 @@ A theme for Playnite to showcase the Platforms of games.
 ![](https://i.imgur.com/QykDcVM.jpeg)
 ![](https://i.imgur.com/6whlZhp.jpeg)
 
+### Plugins Supported:
+* DKG Theme Modifier
+* Extra Metadata Loader
+* Extra Metadata Fullscreen Mode Helper
+* SuccessStory
+
 See the Playnite Forum thread at: https://playnite.link/forum/thread-1116.html
 
 Please support the Main Playnite Project: https://www.patreon.com/playnite
